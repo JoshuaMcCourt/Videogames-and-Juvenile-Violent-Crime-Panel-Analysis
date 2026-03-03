@@ -1,3 +1,7 @@
+############################################################
+# R Default Template
+############################################################
+
 # History files
 .Rhistory
 .Rapp.history
@@ -21,14 +25,14 @@
 # RStudio files
 .Rproj.user/
 
-# produced vignettes
+# Produced vignettes
 vignettes/*.html
 vignettes/*.pdf
 
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+# OAuth2 token
 .httr-oauth
 
-# knitr and R markdown default cache directories
+# knitr and R markdown cache
 *_cache/
 /cache/
 
@@ -42,8 +46,52 @@ vignettes/*.pdf
 # pkgdown site
 docs/
 
-# translation temp files
+# Translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+############################################################
+# renv (Reproducible Environment Management)
+############################################################
+
+renv/library/
+renv/staging/
+
+############################################################
+# Raw Data (Never Commit Large Source Data)
+############################################################
+
+data/raw/
+
+############################################################
+# Processed Data Outputs
+############################################################
+
+data/processed/*.rds
+data/processed/*.csv
+
+############################################################
+# Results Outputs
+############################################################
+
+results/figures/*
+results/tables/*
+results/logs/*
+
+############################################################
+# OS-Specific Files
+############################################################
+
+.DS_Store
+Thumbs.db
+
+############################################################
+# Compressed Files
+############################################################
+
+*.zip
+*.tar.gz
+*.7z
+
