@@ -75,6 +75,7 @@ data/raw/ucr/ucr_arrests_monthly_all_crimes_race_sex_1974_2020_dta/
 ## How to Run the Full Pipeline
 
 From project root:
+'''r
 source("run_all.R")
 
 This will:
@@ -84,21 +85,4 @@ This will:
   - Estimate regressions
   - Output results to /results
 
-## Reproducibility
 
-This project uses renv for package version control.
-
-To restore required packages:
-renv::restore()
-
-## Outputs
-
-Processed datasets:
-  - ipums_clean.rds
-  - ucr_clean_1984_2003.rds
-  - merged_panel.rds
-
-Results:
-Tables → results/tables/
-Figures → results/figures/
-Logs → results/logs/
