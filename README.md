@@ -43,7 +43,7 @@ Raw data is not committed to this repository due to size constraints and best pr
 
 IPUMS CPS microdata extract used to construct demographic controls and exposure proxies.
 
-`data/raw/ucr/`
+`data/raw/ucr/ucr_arrests_monthly_all_crimes_race_sex_1974_2020_dta`
 
 FBI Uniform Crime Reports (UCR) arrest data in Stata .dta format (monthly agency-level data).
 
