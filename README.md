@@ -19,6 +19,9 @@ The analysis combines:
 All data processing, merging, and estimation are reproducible through a
 modular R pipeline via `run_all.R`.
 
+Raw IPUMS CPS and UCR arrest data are not included in this repository due to size constraints.
+Users must download the data separately and place them in the appropriate `data/raw/` directories before running the pipeline.
+
 ## Repository Structure – Key Modules
 ### Root-Level Files
 
