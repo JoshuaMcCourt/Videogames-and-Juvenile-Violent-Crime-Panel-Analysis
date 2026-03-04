@@ -1,0 +1,55 @@
+                                                   m1                       m2
+Dependent Var.:              total_violent_crimes_juv total_violent_crimes_juv
+                                                                              
+Constant                               -5.989 (7.965)                         
+mean_videogame                          2.651 (4.314)                         
+postrelease                           -6.081. (3.048)            1.265 (3.790)
+population                        8.54e-5*** (1.7e-5)       -8.59e-7 (2.37e-5)
+mean_videogame x postrelease           3.392* (1.674)          -0.5736 (2.075)
+Fixed-Effects:               ------------------------ ------------------------
+ori                                                No                      Yes
+STATEFIP                                           No                       No
+date                                               No                       No
+____________________________ ________________________ ________________________
+S.E.: Clustered                          by: STATEFIP             by: STATEFIP
+Observations                                1,942,248                1,942,248
+R2                                            0.76523                  0.93163
+Within R2                                          --                  0.00145
+
+                                                   m3                       m4
+Dependent Var.:              total_violent_crimes_juv total_violent_crimes_juv
+                                                                              
+Constant                                                                      
+mean_videogame                                                                
+postrelease                           -6.113. (3.308)                         
+population                        8.58e-5*** (1.7e-5)       -1.48e-7 (2.39e-5)
+mean_videogame x postrelease           3.420. (1.820)          -0.6946 (2.090)
+Fixed-Effects:               ------------------------ ------------------------
+ori                                                No                      Yes
+STATEFIP                                          Yes                       No
+date                                               No                      Yes
+____________________________ ________________________ ________________________
+S.E.: Clustered                          by: STATEFIP             by: STATEFIP
+Observations                                1,942,248                1,942,248
+R2                                            0.76779                  0.93184
+Within R2                                     0.76651                  8.03e-6
+
+                                                   m5
+Dependent Var.:              total_violent_crimes_juv
+                                                     
+Constant                                             
+mean_videogame                                       
+postrelease                                          
+population                        8.58e-5*** (1.7e-5)
+mean_videogame x postrelease           3.310. (1.821)
+Fixed-Effects:               ------------------------
+ori                                                No
+STATEFIP                                          Yes
+date                                              Yes
+____________________________ ________________________
+S.E.: Clustered                          by: STATEFIP
+Observations                                1,942,248
+R2                                            0.76809
+Within R2                                     0.76673
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
