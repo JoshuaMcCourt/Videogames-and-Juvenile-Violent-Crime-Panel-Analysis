@@ -1,0 +1,73 @@
+MODEL 1
+OLS estimation, Dep. Var.: total_violent_crimes_juv
+Observations: 1,942,248
+Standard-errors: Clustered (STATEFIP) 
+                            Estimate Std. Error   t value   Pr(>|t|)    
+(Intercept)                -5.988661   7.965280 -0.751846 4.5567e-01    
+mean_videogame              2.651418   4.314360  0.614557 5.4163e-01    
+postrelease                -6.080785   3.047551 -1.995302 5.1473e-02 .  
+population                  0.000085   0.000017  5.027561 6.7578e-06 ***
+mean_videogame:postrelease  3.392011   1.674358  2.025858 4.8132e-02 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 5.08123   Adj. R2: 0.765233
+
+MODEL 2
+OLS estimation, Dep. Var.: total_violent_crimes_juv
+Observations: 1,942,248
+Fixed-effects: ori: 14,068
+Standard-errors: Clustered (STATEFIP) 
+                               Estimate Std. Error   t value Pr(>|t|) 
+postrelease                 1.265422577   3.789950  0.333889  0.73986 
+population                 -0.000000859   0.000024 -0.036283  0.97120 
+mean_videogame:postrelease -0.573620580   2.075097 -0.276431  0.78336 
+... 1 variable was removed because of collinearity (mean_videogame)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 2.74212     Adj. R2: 0.93113 
+                Within R2: 0.001449
+
+MODEL 3
+OLS estimation, Dep. Var.: total_violent_crimes_juv
+Observations: 1,942,248
+Fixed-effects: STATEFIP: 51
+Standard-errors: Clustered (STATEFIP) 
+                            Estimate Std. Error  t value   Pr(>|t|)    
+postrelease                -6.113355   3.308361 -1.84785 7.0544e-02 .  
+population                  0.000086   0.000017  5.05357 6.1761e-06 ***
+mean_videogame:postrelease  3.419563   1.819927  1.87896 6.6086e-02 .  
+... 1 variable was removed because of collinearity (mean_videogame)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 5.05346     Adj. R2: 0.767786
+                Within R2: 0.76651 
+
+MODEL 4
+OLS estimation, Dep. Var.: total_violent_crimes_juv
+Observations: 1,942,248
+Fixed-effects: ori: 14,068,  date: 240
+Standard-errors: Clustered (STATEFIP) 
+                               Estimate Std. Error   t value Pr(>|t|) 
+population                 -0.000000148   0.000024 -0.006191  0.99508 
+mean_videogame:postrelease -0.694594916   2.090012 -0.332340  0.74102 
+... 2 variables were removed because of collinearity (mean_videogame and
+postrelease)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 2.73787     Adj. R2: 0.931335
+                Within R2: 8.033e-6
+
+MODEL 5
+OLS estimation, Dep. Var.: total_violent_crimes_juv
+Observations: 1,942,248
+Fixed-effects: STATEFIP: 51,  date: 240
+Standard-errors: Clustered (STATEFIP) 
+                           Estimate Std. Error t value   Pr(>|t|)    
+population                 0.000086   0.000017 5.05407 6.1654e-06 ***
+mean_videogame:postrelease 3.310395   1.820785 1.81811 7.5040e-02 .  
+... 2 variables were removed because of collinearity (mean_videogame and
+postrelease)
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 5.05024     Adj. R2: 0.768053
+                Within R2: 0.766727
