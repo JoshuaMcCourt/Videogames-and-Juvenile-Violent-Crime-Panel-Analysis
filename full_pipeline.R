@@ -3,7 +3,6 @@
 #videogame-juvenile-violence/
 #├── README.md
 #├── .gitignore
-#├── renv.lock
 #│
 #├── data/
 #│   ├── raw/
@@ -42,9 +41,9 @@ install.packages("haven")
 library(haven)
 library(dplyr)
 
-setwd("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/data/raw/ipums")
+setwd("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/Videogame Juvenile Violence/data/raw/ipums")
 
-full_ipums_data = read.csv("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/data/raw/ipums/CPSFull.csv")
+full_ipums_data = read.csv("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/Videogame Juvenile Violence/data/raw/ipums/CPSFull.csv")
 ipums_data0 = full_ipums_data[full_ipums_data$AGE %in% c(10, 11, 12, 13, 14, 15, 16, 17), ]
 ipums_data = ipums_data0[ipums_data0$CICMPGAM %in% c(1, 2), ]
 rm(list="ipums_data0")
@@ -228,7 +227,7 @@ library(stringr)
 # Clear all objects from the R environment
 rm(list=ls())
 
-setwd("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/data/raw/ucr/ucr_arrests_monthly_all_crimes_race_sex_1974_2020_dta")
+setwd("C:/Users/JoshuaMcCourt/Documents/Masters Work/Dissertation/Videogame Juvenile Violence/data/raw/ucr/ucr_arrests_monthly_all_crimes_race_sex_1974_2020_dta")
 
 # Analysing data for the years 1984-2003
 
