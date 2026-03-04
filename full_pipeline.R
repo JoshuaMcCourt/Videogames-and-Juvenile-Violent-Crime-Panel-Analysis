@@ -187,6 +187,7 @@ birth_year_ranges = c("1967-1970", "1971-1974", "1975-1978", "1979-1982",
 decimals = c(0.7481481, 0.7808689, 0.5393712, 0.7901654,
               0.7458012, 0.8344583, 0.880447)
 
+# Create data frame for plotting
 plot_data = data.frame(
   BirthYearRange = birth_year_ranges,
   Percentage = decimals
@@ -194,21 +195,27 @@ plot_data = data.frame(
 
 print(plot_data)
 
-
 library(ggplot2)
 
-# Histogram
+# Bar plot of proportion of video game players by birth year range
 ggplot(plot_data, aes(x = BirthYearRange, y = Percentage)) +
-  geom_bar(stat = "identity", fill = "skyblue", width = 0.75) +
+  geom_bar(stat = "identity", width = 0.75) +
+  theme_minimal() +
   labs(
+    title = "Proportion of Video Game Players by Birth Year Range",
     x = "Birth Year Range",
     y = "Proportion of Video Game Players"
   ) +
-  theme_minimal() +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1)
   ) +
-  ylim(0,1)
+  ylim(0, 1)
+
+ggsave(
+  file.path(config$ROOT, config$RESULTS, "figures", "bar_birthyear_videogame.png"),
+  width = 8,
+  height = 6
+)
 
 # UCR Workings
 
