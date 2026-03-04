@@ -31,9 +31,6 @@ Runs the full empirical pipeline in sequence: data processing, panel constructio
 `.gitignore` – Git exclusion rules
 Prevents raw data, processed outputs, and system files from being committed.
 
-`renv.lock` – Reproducible package snapshot
-Locks R package versions to ensure full replication.
-
 ## Data Layer
 ### Raw Data (Not Committed)
 
