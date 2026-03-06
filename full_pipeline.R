@@ -16,6 +16,9 @@
 #│       ├── ucr_clean_1984_2003.rds
 #│       └── merged_panel.rds
 #│
+#├── scripts/
+#│   └── download_data.R
+#│ 
 #├── full_pipeline/
 #│   └── full_pipeline.R
 #│
@@ -921,3 +924,4 @@ inv_whole_base_full_fip_date = feols(asinh(total_violent_crimes_juv) ~ mean_vide
 summary(inv_whole_base_full_fip)
 
 etable(inv_whole_base_post, inv_whole_base_full_ori, inv_whole_base_full_fip, inv_whole_base_full_ori_date, inv_whole_base_full_fip_date, se = "white")
+
