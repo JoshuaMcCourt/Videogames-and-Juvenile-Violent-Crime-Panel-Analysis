@@ -1,3 +1,4 @@
+source("scripts/download_data.R")
 source("src/ipums_pipeline.R")
 source("src/ucr_pipeline.R")
 source("src/merge_panel.R")
