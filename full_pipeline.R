@@ -32,8 +32,17 @@
 #│
 #├── results/
 #│   ├── figures/
+#│   |   ├── bar_birthyear_videogame.png
+#│   |   ├── boxplot_postrelease.png
+#│   |   └── scatter_mean_videogame.png
 #│   ├── tables/
+#│   |   ├── avg_crimes_by_state.csv
+#│   |   ├── avg_crimes_by_year.csv
+#│   |   ├── regression_table.html
+#│   |   ├── regression_table.tex
+#│   |   └── summary_statistics.csv
 #│   └── logs/
+#│       └── model_summaries.txt
 #│
 #└── run_all.R
 
@@ -924,4 +933,5 @@ inv_whole_base_full_fip_date = feols(asinh(total_violent_crimes_juv) ~ mean_vide
 summary(inv_whole_base_full_fip)
 
 etable(inv_whole_base_post, inv_whole_base_full_ori, inv_whole_base_full_fip, inv_whole_base_full_ori_date, inv_whole_base_full_fip_date, se = "white")
+
 
